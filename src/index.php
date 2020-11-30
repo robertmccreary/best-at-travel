@@ -1,349 +1,450 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta name="theme-color" content="#ffffff" />
     <meta name="author" content="Brion Silva" />
-    <title>PHP Starter by Aparecium Labs</title>
+    <title>Best at Travel</title>
     <!-- Favicon Package -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./assets/icons/favicon_package/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/icons/favicon_package/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./assets/icons/favicon_package/favicon-16x16.png"
-    />
-    <link
-      rel="manifest"
-      href="./assets/icons/favicon_package/site.webmanifest"
-    />
-    <link
-      rel="mask-icon"
-      href="./assets/icons/favicon_package/safari-pinned-tab.svg"
-      color="#5bbad5"
-    />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/favicon_package/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon_package/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon_package/favicon-16x16.png">
+    <link rel="manifest" href="./assets/icons/favicon_package/site.webmanifest">
+    <link rel="mask-icon" href="./assets/icons/favicon_package/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="./assets/icons/favicon_package/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;800&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;800&display=swap"
+        media="print" onload="this.media='all'" />
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;800&display=swap" />
+    </noscript>
+
+
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-config" content="./assets/icons/favicon_package/browserconfig.xml">
+    <meta name="theme-color" content="#6c2181">
+
+
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
 
     <!-- inject:css -->
     <!-- endinject -->
 
     <!-- inject:js -->
     <!-- endinject -->
-  </head>
+</head>
 
-  <body>
-    <?php require './components/header.php'?><!-- header -->
-    <div class="main-area overlay">
-      <section class="left-section">
-        <div class="”row”">
-          <div class="”col-xs-12”">
-            <div class="aparecium-logo-container">
-              <svg
-                version="1.1"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                x="0px"
-                y="0px"
-                width="1200px"
-                height="1200px"
-                viewBox="0 0 1200 1200"
-                enable-background="new 0 0 1200 1200"
-                xml:space="preserve"
-                class="aparecium-logo fox"
-              >
-                <g id="Fox">
-                  <polygon
-                    fill="#BDBEC0"
-                    stroke="#FFFFFF"
-                    stroke-miterlimit="10"
-                    points="1058.977,356.682 1100.332,463.247 926.018,623.893 926.214,567.694 	"
-                  />
-                  <polygon
-                    fill="#F15F3E"
-                    stroke="#FFFFFF"
-                    stroke-miterlimit="10"
-                    points="837.496,532.569 872.783,588.951 716.814,817.89 	"
-                  />
-                  <polygon
-                    fill="#BDBEC0"
-                    stroke="#FFFFFF"
-                    stroke-miterlimit="10"
-                    points="136.135,354.199 292.34,568.224 270.073,626.543 89.287,460.594 	"
-                  />
-                  <polygon
-                    fill="#1B2635"
-                    stroke="#FFFFFF"
-                    stroke-miterlimit="10"
-                    points="1058.977,122.343 1030.348,332.029 926.214,567.694 1058.977,356.682 	"
-                  />
-                  <polygon
-                    fill="#202E42"
-                    stroke="#FFFFFF"
-                    stroke-miterlimit="10"
-                    points="945.253,338.657 1058.977,122.343 1030.348,332.029 926.214,567.694 	"
-                  />
-                  <polyline
-                    fill="#364867"
-                    stroke="#FFFFFF"
-                    stroke-miterlimit="10"
-                    points="721.387,343.694 1058.977,122.343 945.253,338.657 721.387,343.694 	"
-                  />
-                  <polyline
-                    fill="#2C3B56"
-                    stroke="#FFFFFF"
-                    stroke-miterlimit="10"
-                    points="721.387,343.694 926.214,567.694 945.253,338.657 721.387,343.694 	"
-                  />
-                  <polygon
-                    fill="#2C3B56"
-                    stroke="#FFFFFF"
-                    stroke-miterlimit="10"
-                    points="136.469,121.814 252.579,338.657 292.34,568.224 174.11,350.851 	"
-                  />
-                  <polygon
-                    fill="#1C2635"
-                    stroke="#FFFFFF"
-                    stroke-miterlimit="10"
-                    points="136.469,121.814 174.11,350.851 292.34,568.224 136.135,354.199 	"
-                  />
-                  <polygon
-                    fill="#364867"
-                    stroke="#FFFFFF"
-                    stroke-miterlimit="10"
-                    points="136.469,121.814 472.603,343.699 252.579,338.657 	"
-                  />
-                  <polygon
-                    fill="#2C3B56"
-                    stroke="#FFFFFF"
-                    stroke-miterlimit="10"
-                    points="292.869,567.434 471.556,344.886 472.603,343.699 253.107,337.87 	"
-                  />
-                  <polygon
-                    fill="#F58846"
-                    stroke="#FFFFFF"
-                    stroke-miterlimit="10"
-                    points="370.276,532.437 472.603,343.699 292.34,568.224 	"
-                  />
-                  <polygon
-                    fill="#F05A2B"
-                    stroke="#FFFFFF"
-                    stroke-miterlimit="10"
-                    points="596.996,615.94 721.387,343.694 598.782,411.289 472.603,343.699 	"
-                  />
-                  <polygon
-                    fill="#C74227"
-                    stroke="#FFFFFF"
-                    stroke-miterlimit="10"
-                    points="721.387,343.694 472.603,343.699 598.782,411.289 	"
-                  />
-                  <polygon
-                    fill="#F58846"
-                    stroke="#FFFFFF"
-                    stroke-miterlimit="10"
-                    points="721.387,343.694 926.214,567.694 837.496,532.569 	"
-                  />
-                  <polygon
-                    fill="#F36B2F"
-                    stroke="#FFFFFF"
-                    stroke-miterlimit="10"
-                    points="721.387,343.694 837.496,532.569 716.814,817.89 598.916,751.268 487.179,817.89 370.276,532.437 472.603,343.699 596.996,615.94 	"
-                  />
-                  <polygon
-                    fill="#F89C68"
-                    stroke="#FFFFFF"
-                    stroke-miterlimit="10"
-                    points="292.34,568.224 370.276,532.437 352.78,588.951 	"
-                  />
-                  <polygon
-                    fill="#F15E3E"
-                    stroke="#FFFFFF"
-                    stroke-miterlimit="10"
-                    points="370.276,532.437 487.179,817.89 352.78,588.951 	"
-                  />
-                  <polyline
-                    fill="#D34E29"
-                    stroke="#FFFFFF"
-                    stroke-miterlimit="10"
-                    points="292.34,568.224 352.78,588.951 487.179,817.89 292.34,568.224 	"
-                  />
-                  <polygon
-                    fill="#0B1525"
-                    stroke="#FFFFFF"
-                    stroke-miterlimit="10"
-                    points="292.34,568.224 270.868,626.277 487.179,817.89 	"
-                  />
-                  <polygon
-                    fill="#F6921E"
-                    stroke="#FFFFFF"
-                    stroke-miterlimit="10"
-                    points="487.179,817.89 598.916,751.268 716.814,817.89 	"
-                  />
-                  <polygon
-                    fill="#0B1525"
-                    stroke="#FFFFFF"
-                    stroke-miterlimit="10"
-                    points="487.179,817.89 716.814,817.89 596.928,972.406 	"
-                  />
-                  <polygon
-                    fill="#F15A2B"
-                    stroke="#FFFFFF"
-                    stroke-miterlimit="10"
-                    points="716.814,817.89 823.181,900.646 596.928,972.406 	"
-                  />
-                  <polygon
-                    fill="#F15A2B"
-                    stroke="#FFFFFF"
-                    stroke-miterlimit="10"
-                    points="487.179,817.89 596.928,972.406 365.107,898.654 	"
-                  />
-                  <path
-                    fill="#DD5432"
-                    stroke="#FFFFFF"
-                    stroke-miterlimit="10"
-                    d="M596.928,972.406c1.191,0,225.855-72.16,225.855-72.16 l-16.302,54.875l-105.375,60.041L596.928,972.406z"
-                  />
-                  <polygon
-                    fill="#DD5432"
-                    stroke="#FFFFFF"
-                    stroke-miterlimit="10"
-                    points="365.107,898.654 596.928,972.406 485.988,1015.162 377.831,956.907 	"
-                  />
-                  <polygon
-                    fill="#E6E7E9"
-                    stroke="#FFFFFF"
-                    stroke-miterlimit="10"
-                    points="596.928,972.406 486.385,1015.559 548.018,1069.639 590.168,1043.791 635.099,1067.652 701.106,1014.764 	"
-                  />
-                  <polygon
-                    fill="#DEDEE0"
-                    stroke="#FFFFFF"
-                    stroke-miterlimit="10"
-                    points="89.287,460.594 487.179,817.89 9.228,668.955 	"
-                  />
-                  <polygon
-                    fill="#DEDEE0"
-                    stroke="#FFFFFF"
-                    stroke-miterlimit="10"
-                    points="716.814,817.89 1100.332,463.247 1184.629,662.065 	"
-                  />
-                  <polygon
-                    fill="#E9EAEB"
-                    stroke="#FFFFFF"
-                    stroke-miterlimit="10"
-                    points="716.814,817.89 1183.038,662.86 1027.961,825.094 	"
-                  />
-                  <polygon
-                    fill="#EDEDED"
-                    stroke="#FFFFFF"
-                    stroke-miterlimit="10"
-                    points="716.814,817.89 818.807,900.646 1028.757,826.686 	"
-                  />
-                  <polygon
-                    fill="#EDEDED"
-                    stroke="#FFFFFF"
-                    stroke-miterlimit="10"
-                    points="153.963,825.094 487.179,817.89 365.107,898.654 	"
-                  />
-                  <path
-                    fill="#C74227"
-                    stroke="#FFFFFF"
-                    stroke-miterlimit="10"
-                    d="M482.409,1015.958"
-                  />
-                  <polygon
-                    fill="#E9EAEB"
-                    stroke="#FFFFFF"
-                    stroke-width="0.25"
-                    stroke-miterlimit="10"
-                    points="9.228,668.955 153.963,825.094 487.179,817.89 	"
-                  />
-                  <polygon
-                    fill="#D34E29"
-                    stroke="#FFFFFF"
-                    stroke-miterlimit="10"
-                    points="872.783,588.951 926.214,567.694 716.814,817.89 	"
-                  />
-                  <polygon
-                    fill="#0B1525"
-                    stroke="#FFFFFF"
-                    stroke-miterlimit="10"
-                    points="926.214,567.694 926.018,623.893 716.814,817.89 	"
-                  />
-                  <polygon
-                    fill="#F89C68"
-                    stroke="#FFFFFF"
-                    stroke-miterlimit="10"
-                    points="872.783,588.951 837.496,532.569 926.214,567.694 	"
-                  />
-                </g>
-              </svg>
+<body>
+    <?php require './components/header.php'?>
+    <!-- header -->
+    <main class="site-content" role="main">
+        <a id="main-content" tabindex="-1"></a>
+        <div class="homepage hero_image">
+            <div class="homepage__hero_image">
+                <img src="./assets/homepage/hero.jpg" />
             </div>
-          </div>
+
+            <div class="homepage__hero_content">
+                <div class="layout-contained layout-contained--large padding-horizontal">
+                    <div class="homepage__hero category"><a href="/">Greece</a></div>
+                    <h1 class="homepage__hero_content--title">
+                        The best Greek islands to explore in 2021
+                    </h1>
+                    <div class="homepage__hero read-more"><a href="/">Read More</a></div>
+                    <?php require './components/breadcrumb/breadcrumb-home.php'?>
+                </div>
+            </div>
         </div>
-      </section>
-      <section class="right-section full-height">
-        <div class="display-table">
-          <div class="display-table-cell">
-            <div class="content">
-              <form
-                class="form-signin"
-                action="https://apareciumlabs.us15.list-manage.com/subscribe/post?u=41620257667e0123ce58b4277&amp;id=c1c1df411f"
-                method="post"
-                id="mc-embedded-subscribe-form"
-                name="mc-embedded-subscribe-form"
-                target="_blank"
-                novalidate
-              >
-                <div class="text-center mb-4">
-                  <img class="mb-4" src="assets/img/php-starter.svg" alt="" width="200" height="200">
-                  <p>We<code> &hearts; </code> open-source and
-                    always trying our best to contribute back to the community.
-                    Please Subscribe to our newsletter to stay up to date with more
-                    awesome projects like this.
-                  </p>
+
+        <div class="blog__related-posts">
+            <div class="layout-contained--hero-carousel">
+                <div class="hero-carousel">
+                    <div class="views-row">
+                        <article role="article" class="landscape-teaser">
+                            <div class="teaser__image"><img src="assets/hero-carousel/cove.jpg"></div>
+                            <div class="teaser__content">
+                                <div class="teaser__category">
+                                    <p><a href="#">Travel guides</a></p>
+                                </div>
+                                <h2 class="teaser__title h3"><a href="#">Where to go in Europe</a></h2>
+                                <div class="teaser__text">
+                                    <p>The picturesque beaches, laidback style of living and fresh food that Greece is…
+                                    </p>
+                                </div>
+                        </article>
+                    </div>
+                    <div class="views-row">
+                        <article role="article" class="landscape-teaser">
+                            <div class="teaser__image"><img src="assets/hero-carousel/lobby.jpg"></div>
+                            <div class="teaser__content">
+                                <div class="teaser__category">
+                                    <p><a href="#">Travel Stories</a></p>
+                                </div>
+                                <h2 class="teaser__title h3"><a href="#">48 hours in Singapore</a>
+                                </h2>
+                                <div class="teaser__text">
+                                    <p>Singapore is often overlooked as merely a place to touch down on the way to…</p>
+                                </div>
+                        </article>
+                    </div>
+                    <div class="views-row">
+                        <article role="article" class="landscape-teaser">
+                            <div class="teaser__image"><img src="assets/hero-carousel/walking.jpg"></div>
+                            <div class="teaser__content">
+                                <div class="teaser__category">
+                                    <p><a href="#">Travel Guides</a></p>
+                                </div>
+                                <h2 class="teaser__title h3"><a href="#">Thailand beyond the beach</a></h2>
+                                <div class="teaser__text">
+                                    <p>As irresistible as Thailand’s beaches may be, this country’s beauty transcends…
+                                    </p>
+                                </div>
+                        </article>
+                    </div>
+                    <div class="views-row">
+                        <article role="article" class="landscape-teaser">
+                            <div class="teaser__image"><img src="assets/hero-carousel/cove.jpg"></div>
+                            <div class="teaser__content">
+                                <div class="teaser__category">
+                                    <p><a href="#">Travel guides</a></p>
+                                </div>
+                                <h2 class="teaser__title h3"><a href="#">Where to go in Europe</a></h2>
+                                <div class="teaser__text">
+                                    <p>The picturesque beaches, laidback style of living and fresh food that Greece is…
+                                    </p>
+                                </div>
+                        </article>
+                    </div>
+                    <div class="views-row">
+                        <article role="article" class="landscape-teaser">
+                            <div class="teaser__image"><img src="assets/hero-carousel/lobby.jpg"></div>
+                            <div class="teaser__content">
+                                <div class="teaser__category">
+                                    <p><a href="#">Travel Stories</a></p>
+                                </div>
+                                <h2 class="teaser__title h3"><a href="#">48 hours in Singapore</a>
+                                </h2>
+                                <div class="teaser__text">
+                                    <p>Singapore is often overlooked as merely a place to touch down on the way to…</p>
+                                </div>
+                        </article>
+                    </div>
+                    <div class="views-row">
+                        <article role="article" class="landscape-teaser">
+                            <div class="teaser__image"><img src="assets/hero-carousel/walking.jpg"></div>
+                            <div class="teaser__content">
+                                <div class="teaser__category">
+                                    <p><a href="#">Travel Guides</a></p>
+                                </div>
+                                <h2 class="teaser__title h3"><a href="#">Thailand beyond the beach</a></h2>
+                                <div class="teaser__text">
+                                    <p>As irresistible as Thailand’s beaches may be, this country’s beauty transcends…
+                                    </p>
+                                </div>
+                        </article>
+                    </div>
+                    <div class="views-row">
+                        <article role="article" class="landscape-teaser">
+                            <div class="teaser__image"><img src="assets/hero-carousel/cove.jpg"></div>
+                            <div class="teaser__content">
+                                <div class="teaser__category">
+                                    <p><a href="#">Travel guides</a></p>
+                                </div>
+                                <h2 class="teaser__title h3"><a href="#">Where to go in Europe</a></h2>
+                                <div class="teaser__text">
+                                    <p>The picturesque beaches, laidback style of living and fresh food that Greece is…
+                                    </p>
+                                </div>
+                        </article>
+                    </div>
+                    <div class="views-row">
+                        <article role="article" class="landscape-teaser">
+                            <div class="teaser__image"><img src="assets/hero-carousel/lobby.jpg"></div>
+                            <div class="teaser__content">
+                                <div class="teaser__category">
+                                    <p><a href="#">Travel Stories</a></p>
+                                </div>
+                                <h2 class="teaser__title h3"><a href="#">48 hours in Singapore</a>
+                                </h2>
+                                <div class="teaser__text">
+                                    <p>Singapore is often overlooked as merely a place to touch down on the way to…</p>
+                                </div>
+                        </article>
+                    </div>
+                    <div class="views-row">
+                        <article role="article" class="landscape-teaser">
+                            <div class="teaser__image"><img src="assets/hero-carousel/walking.jpg"></div>
+                            <div class="teaser__content">
+                                <div class="teaser__category">
+                                    <p><a href="#">Travel Guides</a></p>
+                                </div>
+                                <h2 class="teaser__title h3"><a href="#">Thailand beyond the beach</a></h2>
+                                <div class="teaser__text">
+                                    <p>As irresistible as Thailand’s beaches may be, this country’s beauty transcends…
+                                    </p>
+                                </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="padding-horizontal layout-contained layout-contained--large">
+            <div class="carousel-header">
+                <h2>What’s hot right now?</h2>
+                <a class="btn btn--ghost" href="./index.php">See More Articles</a>
+            </div>
+            <div class="article-carousel">
+                <div class="views-row">
+
+                    <article role="article" class="teaser">
+                        <div class="teaser__image"><img src="assets/img/teasers/dubai.jpg"></div>
+                        <div class="teaser__content">
+                            <div class="teaser__category">
+                                <p><a href="#">Dubai</a></p>
+                            </div>
+                            <h2 class="teaser__title h3"><a href="#">Why visit Dubai in November?</a></h2>
+                            <div class="teaser__text">
+                                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                    deserunt
+                                    mollit
+                                    anim id est laborum.</p>
+                            </div>
+
+                    </article>
+                </div>
+                <div class="views-row">
+                    <article role="article" class="teaser">
+                        <div class="teaser__image"><img src="assets/img/teasers/travel.jpg"></div>
+                        <div class="teaser__content">
+                            <div class="teaser__category">
+                                <p><a href="#">Travel News</a></p>
+                            </div>
+                            <h2 class="teaser__title h3"><a href="#">Best travel trends and locations for 2020</a>
+                            </h2>
+                            <div class="teaser__text">
+                                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                    deserunt
+                                    mollit
+                                    anim id est laborum.</p>
+                            </div>
+
+                    </article>
+                </div>
+                <div class="views-row">
+                    <article role="article" class="teaser">
+                        <div class="teaser__image"><img src="assets/img/teasers/beach.jpg"></div>
+                        <div class="teaser__content">
+                            <div class="teaser__category">
+                                <p><a href="#">Travel Guides</a></p>
+                            </div>
+                            <h2 class="teaser__title h3"><a href="#">Where is hot in November?</a></h2>
+                            <div class="teaser__text">
+                                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                    deserunt
+                                    mollit
+                                    anim id est laborum.</p>
+                            </div>
+                    </article>
+                </div>
+                <div class="views-row">
+                    <article role="article" class="teaser">
+                        <div class="teaser__image"><img src="assets/img/teasers/xmas.jpg"></div>
+                        <div class="teaser__content">
+                            <div class="teaser__category">
+                                <p><a href="#">Europe</a></p>
+                            </div>
+                            <h2 class="teaser__title h3"><a href="#">The best Christmas markets you need to visit
+                                    this year</a></h2>
+                            <div class="teaser__text">
+                                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                    deserunt
+                                    mollit
+                                    anim id est laborum.</p>
+                            </div>
+                    </article>
                 </div>
 
-                <div id="mc_embed_signup_scroll">
-                  <div class="form-label-group">
-                    <input type="email" id="inputEmail" name="EMAIL" id="mce-EMAIL" class="form-control" placeholder="Email address" required autofocus>
-                    <label for="inputEmail">Email address</label>
-                  </div>
 
-                  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                  <div
-                    style="position: absolute; left: -5000px;"
-                    aria-hidden="true"
-                  >
-                    <input
-                      type="text"
-                      name="b_41620257667e0123ce58b4277_c1c1df411f"
-                      tabindex="-1"
-                      value=""
-                    />
-                  </div>
+                <div class="views-row">
 
-                  <button id="mc-embedded-subscribe" class="btn btn-lg btn-primary btn-block" name="subscribe" type="submit">Subscribe</button>
+                    <article role="article" class="teaser">
+                        <div class="teaser__image"><img src="assets/img/teasers/dubai.jpg"></div>
+                        <div class="teaser__content">
+                            <div class="teaser__category">
+                                <p><a href="#">Dubai</a></p>
+                            </div>
+                            <h2 class="teaser__title h3"><a href="#">Why visit Dubai in November?</a></h2>
+                            <div class="teaser__text">
+                                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                    deserunt
+                                    mollit
+                                    anim id est laborum.</p>
+                            </div>
+
+                    </article>
                 </div>
-              </form>
-              <p class="text-center post-desc">
-                Please note that this subscription can be cancelled at any time.
-              </p>
+                <div class="views-row">
+                    <article role="article" class="teaser">
+                        <div class="teaser__image"><img src="assets/img/teasers/travel.jpg"></div>
+                        <div class="teaser__content">
+                            <div class="teaser__category">
+                                <p><a href="#">Travel News</a></p>
+                            </div>
+                            <h2 class="teaser__title h3"><a href="#">Best travel trends and locations for
+                                    2020</a>
+                            </h2>
+                            <div class="teaser__text">
+                                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                    deserunt
+                                    mollit
+                                    anim id est laborum.</p>
+                            </div>
+
+                    </article>
+                </div>
+                <div class="views-row">
+                    <article role="article" class="teaser">
+                        <div class="teaser__image"><img src="assets/img/teasers/beach.jpg"></div>
+                        <div class="teaser__content">
+                            <div class="teaser__category">
+                                <p><a href="#">Travel Guides</a></p>
+                            </div>
+                            <h2 class="teaser__title h3"><a href="#">Where is hot in November?</a></h2>
+                            <div class="teaser__text">
+                                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                    deserunt
+                                    mollit
+                                    anim id est laborum.</p>
+                            </div>
+                    </article>
+                </div>
+                <div class="views-row">
+                    <article role="article" class="teaser">
+                        <div class="teaser__image"><img src="assets/img/teasers/xmas.jpg"></div>
+                        <div class="teaser__content">
+                            <div class="teaser__category">
+                                <p><a href="#">Europe</a></p>
+                            </div>
+                            <h2 class="teaser__title h3"><a href="#">The best Christmas markets you need to
+                                    visit
+                                    this year</a></h2>
+                            <div class="teaser__text">
+                                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                    deserunt
+                                    mollit
+                                    anim id est laborum.</p>
+                            </div>
+                    </article>
+                </div>
             </div>
-          </div>
+
         </div>
-      </section>
-    </div>
-    <?php require './components/footer.php'?><!--footer -->
-  </body>
+
+        <div class="padding-horizontal layout-contained layout-contained--large margin-bottom">
+            <div class="carousel-header">
+                <h2>Where would you like to go?</h2>
+            </div>
+            <div class="destination-carousel">
+                <div class="views-row">
+                    <article role="article" class="teaser">
+                        <div class="teaser__image"><img src="assets/dest/asia.jpg"></div>
+                        <div class="teaser__content">
+                            <div class="teaser__category">
+                                <p><a href="#">Asia</a></p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="views-row">
+                    <article role="article" class="teaser">
+                        <div class="teaser__image"><img src="assets/dest/carribean.jpg"></div>
+                        <div class="teaser__content">
+                            <div class="teaser__category">
+                                <p><a href="#">Carribean</a></p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="views-row">
+                    <article role="article" class="teaser">
+                        <div class="teaser__image"><img src="assets/dest/europe.jpg"></div>
+                        <div class="teaser__content">
+                            <div class="teaser__category">
+                                <p><a href="#">Europe</a></p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="views-row">
+                    <article role="article" class="teaser">
+                        <div class="teaser__image"><img src="assets/dest/asia.jpg"></div>
+                        <div class="teaser__content">
+                            <div class="teaser__category">
+                                <p><a href="#">Asia</a></p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="views-row">
+                    <article role="article" class="teaser">
+                        <div class="teaser__image"><img src="assets/dest/carribean.jpg"></div>
+                        <div class="teaser__content">
+                            <div class="teaser__category">
+                                <p><a href="#">Carribean</a></p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+        </div>
+
+        <?php require './components/cta/cta.php'?>
+    </main>
+    <?php require './components/footer.php'?>
+    <!--footer -->
+    <?php require './components/menu/menu.php'?>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $(".hero-carousel").slick({
+            dots: true,
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 3
+        });
+        $(".article-carousel").slick({
+            dots: false,
+            infinite: true,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            prevArrow: "<button type='button' class='slick-prev pull-left'><img src='/assets/img/left.png'/></button>",
+            nextArrow: "<button type='button' class='slick-next pull-right'><img src='/assets/img/right.png'/></button>"
+
+        });
+        $(".destination-carousel").slick({
+            dots: false,
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            prevArrow: "<button type='button' class='slick-prev pull-left'><img src='/assets/img/left.png'/></button>",
+            nextArrow: "<button type='button' class='slick-next pull-right'><img src='/assets/img/right.png'/></button>"
+
+        });
+
+    });
+    </script>
+</body>
+
 </html>

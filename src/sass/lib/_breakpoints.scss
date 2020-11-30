@@ -1,0 +1,42 @@
+// Sign posts
+$bp--xsmall: 380px;
+$bp--small: 500px;
+$bp--medium: 678px;
+$bp--medium-images: 840px;
+$bp--large: 768px;
+$bp--xlarge: 900px;
+$bp--xxlarge: 1268px;
+$bp--xxxlarge: 1320px;
+// We make the layout-container relative, so if we have anything that is
+// positioned absolute, that item won't move behind the admin toolbar when
+// logged in
+
+.layout-container {
+  position: relative;
+}
+// Layout contained is our general class for the width of content areas.
+.layout-contained {
+  max-width: $bp--xlarge;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.layout-contained--medium {
+  max-width: $bp--medium;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.layout-contained--medium-images {
+  max-width: 840px;
+  margin: 6rem auto;
+}
+
+.layout-contained--large {
+  max-width: $bp--xxxlarge;
+  margin-right: auto;
+  margin-left: auto;
+  @include breakpoint($bp--xxxlarge) {
+    min-width: $bp--xxxlarge;
+  }
+}

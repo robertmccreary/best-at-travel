@@ -1,0 +1,57 @@
+$ff--regular: "Mulish", sans-serif;
+$fw--regular: 400;
+$fw--semi-bold: 600;
+$fw--bold: 800;
+
+html {
+  box-sizing: border-box !important;
+  font-family: $ff--regular;
+  font-size: $base-font-size;
+  font-weight: $fw--regular;
+  line-height: 1.5;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  line-height: 1.15;
+}
+
+h1,
+.h1 {
+  font-size: 6rem;
+  font-weight: $fw--semi-bold;
+}
+
+h2,
+.h2 {
+  font-size: $base-font-size * 2.4;
+  font-weight: $fw--semi-bold;
+}
+
+h3,
+.h3 {
+  font-size: $base-font-size * 1.8;
+  font-weight: $fw--semi-bold;
+  line-height: 4;
+}
+
+h4,
+.h4 {
+  font-size: $base-font-size * 2;
+  font-weight: $fw--regular;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 2;
+}

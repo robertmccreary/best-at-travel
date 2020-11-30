@@ -1,0 +1,31 @@
+.cta {
+  padding: 5rem 0 7rem 0;
+  text-align: center;
+  background: $c-light-gray;
+}
+
+.cta p {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.btn-cta {
+  @include hover-state;
+  display: inline-block;
+  margin-top: 3rem;
+  padding: 1.2rem 3rem 1.2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $c-white;
+  border-radius: $border-radius;
+  background-color: $c-primary-color;
+  font-size: 1.2rem;
+  font-weight: $fw--bold;
+  line-height: 1.4;
+}
+.blog__read-more {
+  margin: 0 auto;
+  text-align: center;
+}

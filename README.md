@@ -74,19 +74,29 @@ Once the dev server is fired up, it'll automatically open up a new tab. If not, 
 
 # Table of Contents
 
+- [Quick Links](#quick-links)
+- [Quick start](#quick-start)
+- [Table of Contents](#table-of-contents)
 - [File Structure](#file-structure)
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Setting Up](#setting-up)
   - [Running the app](#running-the-app)
+    - [server](#server)
 - [Configuration](#configuration)
   - [Add third-party dependencies](#add-third-party-dependencies)
     - [Composer](#composer)
-    - [Bower](#bower)
+    - [Favicon](#favicon)
 - [Styling](#styling)
+- [Testing](#testing)
+- [Linting](#linting)
 - [Deployment](#deployment)
-  - [Heroku](#deploy-to-heroku)
+  - [Building the app](#building-the-app)
+    - [For Development](#for-development)
+    - [For Production](#for-production)
+  - [Deploy to Heroku](#deploy-to-heroku)
 - [Built With](#built-with)
+- [Changelog](#changelog)
 - [Contributing](#contributing)
 - [Contributors](#contributors)
 - [License](#license)
@@ -206,17 +216,13 @@ Lets say that you want to integrate `facebook/graph-sdk` to your project. Just r
 composer require facebook/graph-sdk
 ```
 
-### Bower
+### Favicon
 
-To use any third party bower libraries other than the included `bootstrap`, `jquery` and `font-awesome` libs, locate the package you want in the [bower package repository](https://bower.io/search/) and use the following command to add it to your project.
+Go to https://realfavicongenerator.net/ and add an SVG or PNG file. 
 
-```bash
-bower install $package --save
-```
+Enter ```./assets/icons/favicon_package/``` in Favicon Generator Options path.
 
-Take a look at the bellow example:
-
-Lets say that you want to add `moment.js` to your project. Just run the command bellow.
+Extract the folder to the favicon package folder and update header.
 
 ```bash
 bower install moment --save

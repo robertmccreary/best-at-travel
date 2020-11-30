@@ -1,5 +1,37 @@
-.header {
-  background: $header-background;
-  border-bottom: $header-border-bottom;
-  padding: $header-padding;
+.header .header__inner {
+  position: relative;
+  z-index: 200;
+}
+.header__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 115px;
+}
+.booking-navigation {
+  display: none;
+  margin-right: 20px;
+  margin-left: auto;
+  text-align: right;
+  @include breakpoint($bp--xlarge) {
+    display: block;
+  }
+  .btn {
+    margin-left: 2rem;
+  }
+}
+.homepage__hero_content--title {
+  max-width: 700px;
+}
+.layout-contained--header {
+  margin-right: auto;
+  margin-left: auto;
+  @include breakpoint($bp--xxlarge) {
+    margin-right: 100px;
+    margin-left: 100px;
+  }
+  //margin-left: calc((100vw - 1320px) / 2);
 }

@@ -1,0 +1,15 @@
+/**
+ * @file
+ * This file sets up the basic vertical rhythm.
+ */
+
+$base-font-size: 10px; // The font size set on the root html element.
+$base-line-height: 1.5 * $base-font-size; // This line-height determines the basic unit of vertical rhythm.
+
+.block {
+  margin-bottom: $base-line-height * 2;
+}
+
+.block--large {
+  margin-bottom: $base-line-height * 4;
+}

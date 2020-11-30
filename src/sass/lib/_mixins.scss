@@ -1,0 +1,12 @@
+@mixin block {
+  margin-bottom: $base-line-height * 2;
+}
+
+@mixin hover-state {
+  &:focus,
+  &:hover {
+    color: $c-white;
+    border-radius: $border-radius;
+    background: $c-black;
+  }
+}

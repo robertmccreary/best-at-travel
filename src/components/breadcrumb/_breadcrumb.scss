@@ -1,0 +1,34 @@
+.breadcrumb ol {
+  margin: 1rem 0;
+  padding-left: 0;
+  list-style: none;
+}
+.breadcrumb li {
+  display: inline-block;
+  font-size: 1.4rem;
+}
+.breadcrumb li a {
+  text-decoration: none;
+  color: $c-white;
+}
+.breadcrumb li:not(:last-child):after {
+  margin: 1rem;
+  content: ">";
+  letter-spacing: -3px;
+}
+.breadcrumb li:last-of-type {
+  font-weight: bold;
+}
+//overrides for blog breadcrumb
+.homepage__hero_content .breadcrumb,
+.blog.hero-content .breadcrumb {
+  position: absolute;
+  top: auto;
+  bottom: -16rem;
+  left: 100px;
+  transform: rotate(270deg);
+  transform-origin: 0 0;
+  ol {
+    margin: 1.5rem 0 0;
+  }
+}
